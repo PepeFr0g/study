@@ -1,0 +1,7 @@
+D:\Учеба\ТерВер\Demo\Demo\bin\Debug\Demo.exe.config
+D:\Учеба\ТерВер\Demo\Demo\bin\Debug\Demo.exe
+D:\Учеба\ТерВер\Demo\Demo\bin\Debug\Demo.pdb
+D:\Учеба\ТерВер\Demo\Demo\obj\Debug\Demo.csproj.AssemblyReference.cache
+D:\Учеба\ТерВер\Demo\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
+D:\Учеба\ТерВер\Demo\Demo\obj\Debug\Demo.exe
+D:\Учеба\ТерВер\Demo\Demo\obj\Debug\Demo.pdb

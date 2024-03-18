@@ -1,0 +1,7 @@
+D:\Учеба\ТИ\Лаба_1\Лаба_1\bin\Debug\Лаба_1.exe.config
+D:\Учеба\ТИ\Лаба_1\Лаба_1\bin\Debug\Лаба_1.exe
+D:\Учеба\ТИ\Лаба_1\Лаба_1\bin\Debug\Лаба_1.pdb
+D:\Учеба\ТИ\Лаба_1\Лаба_1\obj\Debug\Лаба_1.csproj.AssemblyReference.cache
+D:\Учеба\ТИ\Лаба_1\Лаба_1\obj\Debug\Лаба_1.csproj.CoreCompileInputs.cache
+D:\Учеба\ТИ\Лаба_1\Лаба_1\obj\Debug\Лаба_1.exe
+D:\Учеба\ТИ\Лаба_1\Лаба_1\obj\Debug\Лаба_1.pdb

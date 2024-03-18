@@ -1,0 +1,10 @@
+D:\Учеба\ТерВер\Demo_2\Demo_2\bin\Debug\Demo_2.exe.config
+D:\Учеба\ТерВер\Demo_2\Demo_2\bin\Debug\Demo_2.exe
+D:\Учеба\ТерВер\Demo_2\Demo_2\bin\Debug\Demo_2.pdb
+D:\Учеба\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.csproj.AssemblyReference.cache
+D:\Учеба\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.Form1.resources
+D:\Учеба\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.Properties.Resources.resources
+D:\Учеба\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.csproj.GenerateResource.cache
+D:\Учеба\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.csproj.CoreCompileInputs.cache
+D:\Учеба\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.exe
+D:\Учеба\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.pdb
