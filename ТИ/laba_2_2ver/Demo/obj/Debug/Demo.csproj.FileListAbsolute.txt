@@ -1,0 +1,7 @@
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2_2ver\Demo\bin\Debug\Demo.exe.config
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2_2ver\Demo\bin\Debug\Demo.exe
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2_2ver\Demo\bin\Debug\Demo.pdb
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2_2ver\Demo\obj\Debug\Demo.csproj.AssemblyReference.cache
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2_2ver\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2_2ver\Demo\obj\Debug\Demo.exe
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2_2ver\Demo\obj\Debug\Demo.pdb

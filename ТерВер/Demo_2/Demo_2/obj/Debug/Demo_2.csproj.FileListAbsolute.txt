@@ -8,3 +8,13 @@ D:\Учеба\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.csproj.GenerateResourc
 D:\Учеба\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.csproj.CoreCompileInputs.cache
 D:\Учеба\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.exe
 D:\Учеба\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.pdb
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТерВер\Demo_2\Demo_2\bin\Debug\Demo_2.exe.config
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТерВер\Demo_2\Demo_2\bin\Debug\Demo_2.exe
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТерВер\Demo_2\Demo_2\bin\Debug\Demo_2.pdb
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.csproj.AssemblyReference.cache
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.Form1.resources
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.Properties.Resources.resources
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.csproj.GenerateResource.cache
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.csproj.CoreCompileInputs.cache
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.exe
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТерВер\Demo_2\Demo_2\obj\Debug\Demo_2.pdb

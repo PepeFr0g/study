@@ -17,66 +17,49 @@ namespace laba_2
     {
         static char[] alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя".ToCharArray();
 
-        static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Учеба\\ТИ\\laba_2\\laba_2\\Database1.mdf;Integrated Security=True";
+        static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\leone\\Desktop\\Учеба\\ТИ и тервер\\ТИ\\laba_2\\laba_2\\Database1.mdf\";Integrated Security=True";
         public static void Main(string[] args)
         {
-            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
-
-            string text = Text();
-            Console.WriteLine(text);
-            Console.WriteLine("End");
-            AppendTable("Probib",text);
-            Console.WriteLine();
-            text = ReplaceLetters(text);
-            AppendTable("encryptedTable",text);
-            Console.WriteLine(text);
-            Dictionary<char, char> replacements = new Dictionary<char, char>();
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            bool infinity = true;
+            while (infinity)
             {
-                string query = @"
-                SELECT Probib.freq AS ColumnName1, encryptedTable.freq AS ColumnName2, Probib.letter AS letters1, encryptedTable.letter AS letters2
-                FROM Probib
-                INNER JOIN encryptedTable ON ABS(Probib.freq - encryptedTable.freq) < 0.0001";
+                System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
 
-                SqlCommand command = new SqlCommand(query, connection);
-
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
+                string text = Text();
+                string DycrypText = text;
+                //Console.WriteLine(text);
+                //Console.WriteLine("End");
+                AppendTable("Probib", text);
+                text = ReplaceLetters(text);
+                AppendTable("encryptedTable", text);
+                //Console.WriteLine("___________________________");
+                //Console.WriteLine(text);
+                text = DecryptionTextReplacer(text);
+                //Console.WriteLine("___________________________");
+                //Console.WriteLine(text);
+                int matches = 0;
+                for (int i = 0; i < text.Length; i++)
                 {
-                    // Получаем значения из столбцов
-                    string valueFromColumn1 = reader["letters1"].ToString();
-                    string valueFromColumn2 = reader["letters2"].ToString();
-
-                    // Проверяем, что строка не пустая
-                    if (!string.IsNullOrEmpty(valueFromColumn1) && !string.IsNullOrEmpty(valueFromColumn2))
+                    if (text[i] == DycrypText[i])
                     {
-                        char charFromColumn1 = valueFromColumn1[0];
-                        char charFromColumn2 = valueFromColumn2[0];
-
-                        // Проверяем, что ключа еще нет в словаре
-                        if (!replacements.ContainsKey(charFromColumn1))
-                        {
-                            // Добавляем символы в словарь замен
-                            replacements.Add(charFromColumn1, charFromColumn2);
-                        }
+                        matches++;
                     }
                 }
+                Console.WriteLine($"Процент совпадения: {((float)matches / text.Length) * 100}%");
+                if ((float)matches / text.Length * 100 > 96) 
+                {
+                    infinity = false;
+
+                }
+
             }
-            foreach (KeyValuePair<char, char> pair in replacements)
-            {
-                Console.WriteLine($"Ключ: {pair.Key}, Значение: {pair.Value}");
-            }
-            //DecryptionTextReplacer(text);
-            Console.WriteLine("___________________________") ;
-            Console.WriteLine(text);
+
             Console.ReadKey();
         }
         static string DecryptionTextReplacer(string text) 
         {
             Dictionary<char, char> replacements = DecryptionText();
+
             char[] charArray = text.ToCharArray();
 
             for (int i = 0; i < charArray.Length; i++)
@@ -117,7 +100,7 @@ namespace laba_2
                 string query = @"
                 SELECT Probib.freq AS ColumnName1, encryptedTable.freq AS ColumnName2, Probib.letter AS letters1, encryptedTable.letter AS letters2
                 FROM Probib
-                INNER JOIN encryptedTable ON ABS(Probib.freq - encryptedTable.freq) < 0.0001";
+                INNER JOIN encryptedTable ON ABS(Probib.freq - encryptedTable.freq) < 0.000000001";
 
                 SqlCommand command = new SqlCommand(query, connection);
 
@@ -129,7 +112,7 @@ namespace laba_2
                     // Получаем значения из столбцов
                     string valueFromColumn1 = reader["letters1"].ToString();
                     string valueFromColumn2 = reader["letters2"].ToString();
-
+                    
                     // Проверяем, что строка не пустая
                     if (!string.IsNullOrEmpty(valueFromColumn1) && !string.IsNullOrEmpty(valueFromColumn2))
                     {
@@ -137,10 +120,10 @@ namespace laba_2
                         char charFromColumn2 = valueFromColumn2[0];
 
                         // Проверяем, что ключа еще нет в словаре
-                        if (!replacements.ContainsKey(charFromColumn1))
+                        if (!replacements.ContainsKey(charFromColumn2))
                         {
                             // Добавляем символы в словарь замен
-                            replacements.Add(charFromColumn1, charFromColumn2);
+                            replacements.Add(charFromColumn2, charFromColumn1);
                         }
                     }
                 }
@@ -190,7 +173,7 @@ namespace laba_2
         }
         public static string Text() 
         {
-            string path = "D:\\Учеба\\ТИ\\laba_2\\text2.txt";
+            string path = "C:\\Users\\leone\\Desktop\\Учеба\\ТИ и тервер\\ТИ\\laba_2\\text2.txt";
 
             string text = File.ReadAllText(path);
             text = text.ToLower();
@@ -220,7 +203,7 @@ namespace laba_2
                         }
                     }
                     connection.Open();
-                    string queries = $"INSERT INTO {nametable} (letter, freq) VALUES (N'{alphabet[i]}', {Math.Round((double)finded / lengt, 3)});";
+                    string queries = $"INSERT INTO {nametable} (letter, freq) VALUES (N'{alphabet[i]}', {Math.Round((double)finded / lengt, 6)});";
                     using (SqlCommand command = new SqlCommand(queries, connection))
                     {
                         command.ExecuteNonQuery();

@@ -7,3 +7,12 @@ D:\Учеба\ТИ\laba_2\laba_2\obj\Debug\laba_2.csproj.AssemblyReference.cache
 D:\Учеба\ТИ\laba_2\laba_2\obj\Debug\laba_2.csproj.CoreCompileInputs.cache
 D:\Учеба\ТИ\laba_2\laba_2\obj\Debug\laba_2.exe
 D:\Учеба\ТИ\laba_2\laba_2\obj\Debug\laba_2.pdb
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2\laba_2\bin\Debug\Database1.mdf
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2\laba_2\bin\Debug\Database1_log.ldf
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2\laba_2\bin\Debug\laba_2.exe.config
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2\laba_2\bin\Debug\laba_2.exe
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2\laba_2\bin\Debug\laba_2.pdb
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2\laba_2\obj\Debug\laba_2.csproj.AssemblyReference.cache
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2\laba_2\obj\Debug\laba_2.csproj.CoreCompileInputs.cache
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2\laba_2\obj\Debug\laba_2.exe
+C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТИ\laba_2\laba_2\obj\Debug\laba_2.pdb

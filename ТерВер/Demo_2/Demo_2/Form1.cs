@@ -36,22 +36,22 @@ namespace Demo_2
 
             List<double> P = new List<double>();
             List<double> alpha = new List<double>();
-            List<int> ksi = new List<int>(new int[101]);
+            List<int> ksi = new List<int>(new int[100]);
 
 
             double p = 0.25;
             double q = 1 - p;
 
-            string path = @"D:\Учеба\ТерВер\Demo_2\content.txt";
-            string path1 = @"D:\Учеба\ТерВер\Demo_2\content1.txt";
+            string path = @"C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТерВер\Demo_2\content.txt";
+            string path1 = @"C:\Users\leone\Desktop\Учеба\ТИ и тервер\ТерВер\Demo_2\content1.txt";
 
-            for (int i = 0; i < 101; i++)
+            for (int i = 0; i < 100; i++)
             {
                 double rnd = random.NextDouble();
                 alpha.Add(rnd);
             }
 
-            for (int i = 0; i <= 100; i++)
+            for (int i = 0; i < 100; i++)
             {
                 int m = 0;
                 double pm = p;
@@ -61,23 +61,21 @@ namespace Demo_2
                     m++;
                     pm *= q;
                     gamma += pm;
-                    ksi[i] = m;
                 }
+                ksi[i] = m;
             }
 
-            for (int i = 0; i <= 100; i++)
+            for (int i = 0; i < 100; i++)
             {
-                //int randomNumber =  random.Next(0,100); // Генерируем число от 1 до 100
                 numbersList.Add(ksi[i]);
 
             }
             File.WriteAllLines(path1, ksi.ConvertAll(x => x.ToString()));
             File.WriteAllText(path1, string.Join(" ", ksi));
-            ksi.Sort((x, y) => y.CompareTo(x));
+            ksi.Sort();
             File.WriteAllLines(path, ksi.ConvertAll(x => x.ToString()));
             File.WriteAllText(path, string.Join(" ", ksi));
 
-            
 
             // Создание словаря для хранения частоты появления чисел
             Dictionary<int, int> frequency = new Dictionary<int, int>();
@@ -94,18 +92,8 @@ namespace Demo_2
                     frequency[num] = 1;
                 }
             }
-            //foreach (KeyValuePair<int, int> pair in frequency)
-            //{
-            //    string line = $"Частота: {pair.Key}, Значение: {pair.Value}";
-            //    using (StreamWriter writer = new StreamWriter(path1))
-            //    {
-            //        // Записываем строку в файл
-            //        writer.WriteLine(line);
-            //    }
-            //    //File.WriteAllText(path1, string.Join(" ", ksi));
-            //}
-
             // Очистка графика перед построением нового
+
             chart1.Series.Clear();
             chart1.ChartAreas[0].AxisX.Interval = 1;
 
@@ -117,7 +105,7 @@ namespace Demo_2
 
             foreach (KeyValuePair<int, int> entry in frequency)
             {
-                series.Points.AddXY(entry.Key, entry.Value);
+                series.Points.AddXY(entry.Key, (float)entry.Value/100);
             }
             chart1.ChartAreas[0].AxisX.Title = "Значение";
             chart1.ChartAreas[0].AxisY.Title = "Частота";
